@@ -30,41 +30,43 @@
     </header>
     <main>
       <div class="content">
-        <div class="form">
-          <h2>Calcola il prezzo del biglietto</h2>
-          <div class="container">
+        <h2>Personal Details:</h2>
+        <div class="container">
+          <div class="form">
             <div>
-              <label for="name">Name and Surname</label>
+              <label for="name">Name and Surname:</label>
               <input type="text" name="" id="name" />
             </div>
             <div>
-              <label for="distance">Distance (km)</label>
+              <label for="distance">Distance (km):</label>
               <input type="text" name="" id="distance" />
             </div>
             <div>
-              <label for="age">Discounted Fee</label>
+              <label for="age">Age Category:</label>
               <select name="" id="age">
                 <option value=""></option>
                 <option value="underage">Underage</option>
                 <option value="over">Over 65</option>
               </select>
             </div>
-            <button id="generate">Generate</button>
-            <button id="cancel">Cancel</button>
           </div>
+          <button id="generate">Generate</button>
+          <button id="cancel">Cancel</button>
         </div>
 
-        <div class="your-ticket">
-          <h2>Your Ticket</h2>
-          <div class="container">
+        <h2>Your Ticket:</h2>
+        <div class="container">
+          <div class="your-ticket">
             <h3>Passanger Details:</h3>
             <table>
               <thead>
-                <th>PASSANGER NAME</th>
-                <th>OFFER</th>
-                <th>Coach</th>
-                <th>CP CODE</th>
-                <th>TICKET FEE</th>
+                <tr>
+                  <th>PASSANGER NAME</th>
+                  <th>OFFER</th>
+                  <th>Coach</th>
+                  <th>CP CODE</th>
+                  <th>TICKET FEE</th>
+                </tr>
               </thead>
               <tbody>
                 <tr>

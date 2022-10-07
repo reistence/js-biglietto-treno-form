@@ -14,13 +14,26 @@ a {
 img {
   max-width: 100%;
 }
+button {
+  border: 0;
+  background-color: rgb(205, 16, 16);
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  margin: 0 0.3em;
+}
 /* HEADER */
 header {
   width: 100%;
   color: white;
   background-color: rgb(205, 16, 16);
-  padding: 1em 0;
+  padding: 0.5em 0;
   font-size: 2rem;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  z-index: 9;
 }
 .header-container {
   display: flex;
@@ -28,14 +41,97 @@ header {
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
+  height: 7vh;
 }
+
+/* MAIN */
 main {
   background-image: url("../img/pexels-trains.jpg");
   background-position: center;
   background-size: cover;
+  height: 90vh;
+  margin-top: 10vh;
+  position: relative;
 }
 .content {
-  background-color: antiquewhite;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(246, 230, 230);
   width: 90%;
   margin: 0 auto;
+  padding: 0.5em 1em 1em 1em;
+  border-radius: 15px;
+}
+.content h2 {
+  margin: 0.5em 0;
+}
+/* PERSONAL DETAILS */
+.form {
+  margin: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 1em 1em;
+  gap: 2em;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgb(252, 237, 217);
+}
+.form div {
+  display: flex;
+  flex-direction: column;
+  width: 7em;
+}
+.form div:first-child {
+  width: 12em;
+}
+
+.form div > label {
+  margin-bottom: 0.5em;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* TICKET DETAILS */
+
+.your-ticket {
+  background-color: rgb(252, 237, 217);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.your-ticket h3 {
+  font-weight: 300;
+  margin: 0.5em 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+thead {
+  background-color: rgb(210, 199, 199);
+  color: black;
+}
+th:first-child {
+  width: 15em;
+  text-align: left;
+}
+th {
+  text-align: center;
+  padding: 0.2em;
+}
+tbody {
+  background-color: white;
+}
+tbody tr td {
+  padding: 1em 0.2em;
+}
+tbody tr td:not(:first-child) {
+  text-align: center;
+  color: rgb(205, 16, 16);
 }
