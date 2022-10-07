@@ -14,3 +14,28 @@ a {
 img {
   max-width: 100%;
 }
+/* HEADER */
+header {
+  width: 100%;
+  color: white;
+  background-color: rgb(205, 16, 16);
+  padding: 1em 0;
+  font-size: 2rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+main {
+  background-image: url("../img/pexels-trains.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.content {
+  background-color: antiquewhite;
+  width: 90%;
+  margin: 0 auto;
+}
